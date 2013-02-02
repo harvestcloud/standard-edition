@@ -1,4 +1,7 @@
-standard-edition
-================
+Harvest Cloud Standard Edition
+==============================
 
-Symfony2 distro using v2.1
+The Harvest Cloud Standard Edition is a Symfony distribution which includes
+all of the components needed for the Harvest Cloud application.
+
+See the [Symfony README](README.Symfony.md) for more information about Symfony.
