@@ -1,3 +1,82 @@
+HarvestCloudMarketPlaceProfileBundle:
+    resource: "@HarvestCloudMarketPlaceProfileBundle/Resources/config/routing.yml"
+    prefix:   /profile
+
+HarvestCloudNotifierBundle:
+    resource: "@HarvestCloudNotifierBundle/Resources/config/routing.yml"
+    prefix:   /
+
+HarvestCloudEmailBundle:
+    resource: "@HarvestCloudEmailBundle/Resources/config/routing.yml"
+    prefix:   /
+
+HarvestCloudInvoiceBundle:
+    resource: "@HarvestCloudInvoiceBundle/Resources/config/routing.yml"
+    prefix:   /
+
+HarvestCloudPaymentBundle:
+    resource: "@HarvestCloudPaymentBundle/Resources/config/routing.yml"
+    prefix:   /
+
+HarvestCloudDoubleEntryBundle:
+    resource: "@HarvestCloudDoubleEntryBundle/Resources/config/routing.yml"
+    prefix:   /
+
+HarvestCloudPayPalBundle:
+    resource: "@HarvestCloudPayPalBundle/Resources/config/routing.yml"
+    prefix:   /
+
+HarvestCloudMarketPlaceHubBundle:
+    resource: "@HarvestCloudMarketPlaceHubBundle/Resources/config/routing.yml"
+    prefix:   /hub
+
+HarvestCloudMarketPlaceSellerBundle:
+    resource: "@HarvestCloudMarketPlaceSellerBundle/Resources/config/routing.yml"
+    prefix:   /sell
+
+HarvestCloudAutopilotBundle:
+    resource: "@HarvestCloudAutopilotBundle/Resources/config/routing.yml"
+    prefix:   /
+
+HarvestCloudProfileFinancialBundle:
+    resource: "@HarvestCloudProfileFinancialBundle/Resources/config/routing.yml"
+    prefix:   /
+
+HarvestCloudAdminBundle:
+    resource: "@HarvestCloudAdminBundle/Resources/config/routing.yml"
+    prefix:   /admin
+
+HarvestCloudGeoBundle:
+    resource: "@HarvestCloudGeoBundle/Resources/config/routing.yml"
+    prefix:   /
+
+HarvestCloudMarketPlaceBuyerBundle:
+    resource: "@HarvestCloudMarketPlaceBuyerBundle/Resources/config/routing.yml"
+    prefix:   /buy
+
+fos_user_security:
+    resource: "@FOSUserBundle/Resources/config/routing/security.xml"
+
+fos_user_profile:
+    resource: "@FOSUserBundle/Resources/config/routing/profile.xml"
+    prefix: /profile
+
+fos_user_register:
+    resource: "@FOSUserBundle/Resources/config/routing/registration.xml"
+    prefix: /register
+
+fos_user_resetting:
+    resource: "@FOSUserBundle/Resources/config/routing/resetting.xml"
+    prefix: /resetting
+
+fos_user_change_password:
+    resource: "@FOSUserBundle/Resources/config/routing/change_password.xml"
+    prefix: /profile
+
+_welcome:
+    pattern:  /
+    defaults: { _controller: HarvestCloudMarketPlaceBuyerBundle:Default:index }
+
 # Internal routing configuration to handle ESI
 # ****** WARNING ******
 # This route should be enabled with caution as it can open a security vulnerability

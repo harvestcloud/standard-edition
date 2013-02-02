@@ -4,7 +4,7 @@ imports:
 
 framework:
     #esi:             ~
-    #translator:      { fallback: "%locale%" }
+    translator:      { fallback: "%locale%" }
     secret:          "%secret%"
     router:
         resource: "%kernel.root_dir%/config/routing.yml"
@@ -50,6 +50,16 @@ doctrine:
     orm:
         auto_generate_proxy_classes: "%kernel.debug%"
         auto_mapping: true
+        dql:
+            numeric_functions:
+                geo:            HarvestCloud\GeoBundle\AST\Functions\Geo
+                unix_timestamp: HarvestCloud\CoreBundle\AST\Functions\UnixTimestamp
+
+stof_doctrine_extensions:
+    orm:
+        default:
+            tree: true
+
 
 # Swiftmailer Configuration
 swiftmailer:
@@ -58,3 +68,15 @@ swiftmailer:
     username:  "%mailer_user%"
     password:  "%mailer_password%"
     spool:     { type: memory }
+
+#jms_security_extra:
+#    secure_controllers:  true
+#    secure_all_services: false
+
+fos_user:
+    db_driver: orm # other valid values are 'mongodb', 'couchdb' and 'propel'
+    firewall_name: main
+    user_class: HarvestCloud\UserBundle\Entity\User
+    registration:
+        form:
+            type: harvestcloud_user_registration

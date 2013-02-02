@@ -412,23 +412,29 @@
         },
         {
             "name": "harvestcloud/core-bundle",
-            "version": "v0.1.2",
+            "version": "v0.1.5",
+            "target-dir": "HarvestCloud/CoreBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/harvestcloud/CoreBundle",
-                "reference": "v0.1.2"
+                "reference": "v0.1.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/harvestcloud/CoreBundle/zipball/v0.1.2",
-                "reference": "v0.1.2",
+                "url": "https://api.github.com/repos/harvestcloud/CoreBundle/zipball/v0.1.5",
+                "reference": "v0.1.5",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
             },
-            "time": "2013-02-02 01:55:25",
+            "time": "2013-02-02 03:30:43",
             "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "HarvestCloud\\CoreBundle": ""
+                }
+            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
