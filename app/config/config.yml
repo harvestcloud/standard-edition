@@ -58,7 +58,8 @@ doctrine:
 stof_doctrine_extensions:
     orm:
         default:
-            tree: true
+            tree:          true
+            timestampable: true
 
 
 # Swiftmailer Configuration
