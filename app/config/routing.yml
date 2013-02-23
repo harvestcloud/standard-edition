@@ -10,10 +10,6 @@ HarvestCloudEmailBundle:
     resource: "@HarvestCloudEmailBundle/Resources/config/routing.yml"
     prefix:   /
 
-HarvestCloudInvoiceBundle:
-    resource: "@HarvestCloudInvoiceBundle/Resources/config/routing.yml"
-    prefix:   /
-
 HarvestCloudPaymentBundle:
     resource: "@HarvestCloudPaymentBundle/Resources/config/routing.yml"
     prefix:   /
