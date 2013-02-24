@@ -23,7 +23,6 @@ class AppKernel extends Kernel
             new FOS\UserBundle\FOSUserBundle(),
             new HarvestCloud\GeoBundle\HarvestCloudGeoBundle(),
             new HarvestCloud\AdminBundle\HarvestCloudAdminBundle(),
-            new HarvestCloud\ProfileFinancialBundle\HarvestCloudProfileFinancialBundle(),
             new HarvestCloud\AutopilotBundle\HarvestCloudAutopilotBundle(),
             new HarvestCloud\MarketPlace\SellerBundle\HarvestCloudMarketPlaceSellerBundle(),
             new HarvestCloud\MarketPlace\BuyerBundle\HarvestCloudMarketPlaceBuyerBundle(),

@@ -34,10 +34,6 @@ HarvestCloudAutopilotBundle:
     resource: "@HarvestCloudAutopilotBundle/Resources/config/routing.yml"
     prefix:   /
 
-HarvestCloudProfileFinancialBundle:
-    resource: "@HarvestCloudProfileFinancialBundle/Resources/config/routing.yml"
-    prefix:   /
-
 HarvestCloudAdminBundle:
     resource: "@HarvestCloudAdminBundle/Resources/config/routing.yml"
     prefix:   /admin
