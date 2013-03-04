@@ -82,3 +82,8 @@ fos_user:
     registration:
         form:
             type: harvestcloud_user_registration
+
+
+twig:
+    globals:
+        exchange_manager: "@exchange_manager"
