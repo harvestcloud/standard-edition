@@ -87,3 +87,4 @@ fos_user:
 twig:
     globals:
         exchange_manager: "@exchange_manager"
+        google_analytics_key: "%google_analytics_key%"
