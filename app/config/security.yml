@@ -42,6 +42,14 @@ security:
 #            #    realm: "Secured Demo Area"
 
     firewalls:
+        homepage:
+            pattern:   ^/$
+            anonymous: true
+
+        buy:
+            pattern:   ^/buy
+            anonymous: true
+
         main:
             pattern: ^/
             form_login:
@@ -64,4 +72,6 @@ security:
         - { path: ^/login$, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/register, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/$, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/buy, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/, role: IS_AUTHENTICATED_FULLY }
