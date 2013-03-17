@@ -47,7 +47,7 @@ security:
             anonymous: true
 
         buy:
-            pattern:   ^/buy
+            pattern:   ^/buy(?!/checkout) # all buy URLs except buy/checkout URLs
             anonymous: true
 
         main:
@@ -73,5 +73,5 @@ security:
         - { path: ^/register, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/$, role: IS_AUTHENTICATED_ANONYMOUSLY }
-        - { path: ^/buy, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/buy(?!/checkout), role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/, role: IS_AUTHENTICATED_FULLY }
