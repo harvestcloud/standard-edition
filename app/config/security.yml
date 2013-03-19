@@ -42,18 +42,6 @@ security:
 #            #    realm: "Secured Demo Area"
 
     firewalls:
-        homepage:
-            pattern:   ^/$
-            anonymous: true
-
-        buy:
-            pattern:   ^/buy(?!/checkout) # all buy URLs except buy/checkout URLs
-            anonymous: true
-
-        ajax_calls:
-            pattern:    ^/_wdt
-            anonymous:  ~
-
         main:
             pattern: ^/
             form_login:
@@ -68,10 +56,11 @@ security:
             security: false
 
     access_control:
-        - { path: ^/_wdt, roles: IS_AUTHENTICATED_ANONYMOUSLY }
-        - { path: ^/login$, role: IS_AUTHENTICATED_ANONYMOUSLY }
-        - { path: ^/register, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/_wdt,      role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/$,         role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/buy/food,  role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/buy/?$,    role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/login$,    role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/register,  role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }
-        - { path: ^/$, role: IS_AUTHENTICATED_ANONYMOUSLY }
-        - { path: ^/buy(?!/checkout), role: IS_AUTHENTICATED_ANONYMOUSLY }
-        - { path: ^/, role: IS_AUTHENTICATED_FULLY }
+        - { path: ^/,          role: IS_AUTHENTICATED_FULLY }
