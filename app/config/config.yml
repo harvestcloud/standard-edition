@@ -88,3 +88,4 @@ twig:
     globals:
         exchange_manager: "@exchange_manager"
         google_analytics_key: "%google_analytics_key%"
+        stripe_publishable_key: %payment.stripe.publishable_key%

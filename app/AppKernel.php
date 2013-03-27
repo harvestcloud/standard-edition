@@ -29,7 +29,6 @@ class AppKernel extends Kernel
             new HarvestCloud\MarketPlace\HubBundle\HarvestCloudMarketPlaceHubBundle(),
             new HarvestCloud\MarketPlace\CoreBundle\HarvestCloudMarketPlaceCoreBundle(),
             new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
-            new HarvestCloud\PayPalBundle\HarvestCloudPayPalBundle(),
             new HarvestCloud\DoubleEntryBundle\HarvestCloudDoubleEntryBundle(),
             new HarvestCloud\PaymentBundle\HarvestCloudPaymentBundle(),
             new HarvestCloud\EmailBundle\HarvestCloudEmailBundle(),
@@ -38,6 +37,7 @@ class AppKernel extends Kernel
             new HarvestCloud\NotifierBundle\HarvestCloudNotifierBundle(),
             new HarvestCloud\MarketPlace\ProfileBundle\HarvestCloudMarketPlaceProfileBundle(),
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
+            new HarvestCloud\StripeBundle\HarvestCloudStripeBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

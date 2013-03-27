@@ -1,3 +1,7 @@
+harvest_cloud_stripe:
+    resource: "@HarvestCloudStripeBundle/Resources/config/routing.yml"
+    prefix:   /
+
 HarvestCloudMarketPlaceProfileBundle:
     resource: "@HarvestCloudMarketPlaceProfileBundle/Resources/config/routing.yml"
     prefix:   /profile
@@ -10,16 +14,8 @@ HarvestCloudEmailBundle:
     resource: "@HarvestCloudEmailBundle/Resources/config/routing.yml"
     prefix:   /
 
-HarvestCloudPaymentBundle:
-    resource: "@HarvestCloudPaymentBundle/Resources/config/routing.yml"
-    prefix:   /
-
 HarvestCloudDoubleEntryBundle:
     resource: "@HarvestCloudDoubleEntryBundle/Resources/config/routing.yml"
-    prefix:   /
-
-HarvestCloudPayPalBundle:
-    resource: "@HarvestCloudPayPalBundle/Resources/config/routing.yml"
     prefix:   /
 
 HarvestCloudMarketPlaceHubBundle:
