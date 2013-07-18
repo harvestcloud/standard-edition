@@ -34,6 +34,7 @@ class AppKernel extends Kernel
             new HarvestCloud\MarketPlace\ProfileBundle\HarvestCloudMarketPlaceProfileBundle(),
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
             new HarvestCloud\StripeBundle\HarvestCloudStripeBundle(),
+            new HarvestCloud\DevelopmentBundle\HarvestCloudDevelopmentBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
