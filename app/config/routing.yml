@@ -26,14 +26,6 @@ HarvestCloudMarketPlaceSellerBundle:
     resource: "@HarvestCloudMarketPlaceSellerBundle/Resources/config/routing.yml"
     prefix:   /sell
 
-HarvestCloudAutopilotBundle:
-    resource: "@HarvestCloudAutopilotBundle/Resources/config/routing.yml"
-    prefix:   /
-
-HarvestCloudAdminBundle:
-    resource: "@HarvestCloudAdminBundle/Resources/config/routing.yml"
-    prefix:   /admin
-
 HarvestCloudGeoBundle:
     resource: "@HarvestCloudGeoBundle/Resources/config/routing.yml"
     prefix:   /
