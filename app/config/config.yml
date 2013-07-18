@@ -89,3 +89,4 @@ twig:
         exchange_manager: "@exchange_manager"
         google_analytics_key: "%google_analytics_key%"
         stripe_publishable_key: %payment.stripe.publishable_key%
+        stripe_client_id: %payment.stripe.client_id%
