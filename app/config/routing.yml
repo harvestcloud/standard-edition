@@ -30,8 +30,8 @@ HarvestCloudGeoBundle:
     resource: "@HarvestCloudGeoBundle/Resources/config/routing.yml"
     prefix:   /
 
-HarvestCloudMarketPlaceBuyerBundle:
-    resource: "@HarvestCloudMarketPlaceBuyerBundle/Resources/config/routing.yml"
+HarvestCloudCoreBundle:
+    resource: "@HarvestCloudCoreBundle/Resources/config/routing.yml"
     prefix:   /buy
 
 fos_user_security:
@@ -55,7 +55,7 @@ fos_user_change_password:
 
 _welcome:
     pattern:  /
-    defaults: { _controller: HarvestCloudMarketPlaceBuyerBundle:Default:index }
+    defaults: { _controller: HarvestCloud\CoreBundle\Controller\Buyer\DefaultController::indexAction }
 
 # Internal routing configuration to handle ESI
 # ****** WARNING ******
