@@ -22,19 +22,15 @@ class AppKernel extends Kernel
             new HarvestCloud\CoreBundle\HarvestCloudCoreBundle(),
             new FOS\UserBundle\FOSUserBundle(),
             new HarvestCloud\GeoBundle\HarvestCloudGeoBundle(),
-            new HarvestCloud\MarketPlace\SellerBundle\HarvestCloudMarketPlaceSellerBundle(),
-            new HarvestCloud\MarketPlace\BuyerBundle\HarvestCloudMarketPlaceBuyerBundle(),
-            new HarvestCloud\MarketPlace\HubBundle\HarvestCloudMarketPlaceHubBundle(),
-            new HarvestCloud\MarketPlace\CoreBundle\HarvestCloudMarketPlaceCoreBundle(),
             new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
             new HarvestCloud\DoubleEntryBundle\HarvestCloudDoubleEntryBundle(),
             new HarvestCloud\EmailBundle\HarvestCloudEmailBundle(),
             new HarvestCloud\UserBundle\HarvestCloudUserBundle(),
             new HarvestCloud\NotifierBundle\HarvestCloudNotifierBundle(),
-            new HarvestCloud\MarketPlace\ProfileBundle\HarvestCloudMarketPlaceProfileBundle(),
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
             new HarvestCloud\StripeBundle\HarvestCloudStripeBundle(),
             new HarvestCloud\DevelopmentBundle\HarvestCloudDevelopmentBundle(),
+            new FoodByUs\CoreBundle\FoodByUsCoreBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

@@ -2,10 +2,6 @@ harvest_cloud_stripe:
     resource: "@HarvestCloudStripeBundle/Resources/config/routing.yml"
     prefix:   /
 
-HarvestCloudMarketPlaceProfileBundle:
-    resource: "@HarvestCloudMarketPlaceProfileBundle/Resources/config/routing.yml"
-    prefix:   /profile
-
 HarvestCloudNotifierBundle:
     resource: "@HarvestCloudNotifierBundle/Resources/config/routing.yml"
     prefix:   /
@@ -18,21 +14,21 @@ HarvestCloudDoubleEntryBundle:
     resource: "@HarvestCloudDoubleEntryBundle/Resources/config/routing.yml"
     prefix:   /
 
-HarvestCloudMarketPlaceHubBundle:
-    resource: "@HarvestCloudMarketPlaceHubBundle/Resources/config/routing.yml"
-    prefix:   /hub
-
-HarvestCloudMarketPlaceSellerBundle:
-    resource: "@HarvestCloudMarketPlaceSellerBundle/Resources/config/routing.yml"
-    prefix:   /sell
-
 HarvestCloudGeoBundle:
     resource: "@HarvestCloudGeoBundle/Resources/config/routing.yml"
     prefix:   /
 
-HarvestCloudCoreBundle:
-    resource: "@HarvestCloudCoreBundle/Resources/config/routing.yml"
+HarvestCloudCoreBundle_Buy:
+    resource: "@HarvestCloudCoreBundle/Resources/config/routing/buy.yml"
     prefix:   /buy
+
+HarvestCloudCoreBundle_Seller:
+    resource: "@HarvestCloudCoreBundle/Resources/config/routing/seller.yml"
+    prefix:   /seller
+
+HarvestCloudCoreBundle_Hub:
+    resource: "@HarvestCloudCoreBundle/Resources/config/routing/hub.yml"
+    prefix:   /
 
 fos_user_security:
     resource: "@FOSUserBundle/Resources/config/routing/security.xml"
@@ -53,9 +49,21 @@ fos_user_change_password:
     resource: "@FOSUserBundle/Resources/config/routing/change_password.xml"
     prefix: /profile
 
+HarvestCloudCoreBundle_Dashboard:
+    resource: "@HarvestCloudCoreBundle/Resources/config/routing/dashboard.yml"
+    prefix:   /
+
+HarvestCloudCoreBundle_Order:
+    resource: "@HarvestCloudCoreBundle/Resources/config/routing/order.yml"
+    prefix:   /
+
+HarvestCloudCoreBundle_Profile:
+    resource: "@HarvestCloudCoreBundle/Resources/config/routing/profile.yml"
+    prefix:   /
+
 _welcome:
     pattern:  /
-    defaults: { _controller: HarvestCloud\CoreBundle\Controller\Buyer\DefaultController::indexAction }
+    defaults: { _controller: HarvestCloud\CoreBundle\Controller\Buyer\CategoryController::indexAction }
 
 # Internal routing configuration to handle ESI
 # ****** WARNING ******
